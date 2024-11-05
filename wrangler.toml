@@ -1,0 +1,6 @@
+[site]
+bucket = "public"
+entry-point = "workers.generated.handleRequest"
+rewrites = [
+  { pattern = "/*.html", destination = "/:splat" }
+]
